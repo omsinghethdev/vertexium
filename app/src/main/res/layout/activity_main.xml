@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f9f9f9">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="55dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="24dp"
+            android:text="APTOS BLOCKCHAIN"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <!-- User Name Input -->
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000"/>
+
+        <!-- Decision Input -->
+        <EditText
+            android:id="@+id/inputDecision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Important Decision"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000"/>
+
+        <!-- Add Person Button -->
+        <Button
+            android:id="@+id/btnAddPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Person"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Store Single Button -->
+        <Button
+            android:id="@+id/btnStoreOnChain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Store Single on Blockchain"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- People List Display -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="People Added:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvPersonList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No people added yet"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Submit All Button -->
+        <Button
+            android:id="@+id/btnSubmitAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit All to Blockchain"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- View Submitted Records Button -->
+        <Button
+            android:id="@+id/btnViewRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 View All Submitted Records"
+            android:backgroundTint="#673AB7"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Submitted Records Display -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submitted Records:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:id="@+id/tvSubmittedTitle"/>
+
+        <TextView
+            android:id="@+id/tvSubmittedRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:background="#F0F0F0"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:maxLines="10"
+            android:scrollbars="vertical"/>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to add people"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:gravity="center"
+            android:background="#E8F5E8"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
