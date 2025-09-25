@@ -32,7 +32,7 @@ The `activity_main.xml` contains:
   - `tvStatus` – Status messages
 
 ---
-
-
-
-# vertexium
+## ⚙️ Setup Instructions
+1. **Clone or download** the repository:
+   ```bash
+   git clone <your-repo-url>.git
